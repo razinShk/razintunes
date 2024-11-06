@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="card.css"> -->
+  <link rel="stylesheet" href="styles.css">
+   <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+  <link rel="stylesheet" href="scrollbar.css">
+  <link rel="stylesheet" href="musicPlayer.css">
+
+</head>
+
+<body>
+
+  <div class="nav">
+    <div class="logo">
+      <img src="img/logo.svg" alt="">
+    </div>
+    <div class="search-bar">
+      <span class="home cursor"><img aria-hidden="false" height="32" src="img/home.svg" alt="home "></span>
+      <div class="main-search-box">
+        <span><img aria-hidden="false" height="32" src="img/search.png" alt="search"></span>
+        <span class="nd-span"><input class="search" type="text" placeholder="What do you want to play?"></span><span
+          color="gray">I</span>
+        <span class="cursor"><img style="fill:gray ;" aria-hidden="false" height="32" src="img/browesers.svg"
+            alt="playlist"></span>
+      </div>
+
+
+    </div>
+    <div class="auth">
+      <button class="sign-up">sign up</button>
+      <button class="Login in create-playlist">Login in</button>
+    </div>
+  </div>
+  <div class="main">
+    <div class="left-panel">
+      <div class="library-content">
+        <div class="library">
+          <img aria-hidden="false" height="32" src="img/library.svg" alt="library">
+          <b>Your Library</b>
+        </div>
+        <div class="add">
+          <img aria-hidden="false" height="32" src="img/plus.svg" alt="plus">
+        </div>
+      </div>
+      <div class="box scrolly">
+
+
+        <div class="box1">
+          <b>Create your first playlist</b>
+          <p>It's easy, we'll help you</p>
+          <button class="create-playlist">Create Playlist</button>
+        </div>
+        <div class="box1 box2">
+          <b>Let's find some podcasts to follow</b>
+          <p>We'll keep you updated on new episodes</p>
+          <button class="create-playlist">Browse podcasts</button>
+        </div>
+      </div>
+      <div class="scrolly" id="player">
+
+        <ul id="songList"></ul>
+      </div>
+    </div>
+    <div class="right-panel scrolly">
+      <div class="popular-artist scrolly">
+        <b style="font-size: 24px;">Popular artists</b>
+        <div class="log">
+
+          <!-- 1st artist  -->
+
+          <div class="artist pritam">
+            <img class="mashur" src="img/justin.jpg" alt="pritam">
+            <div class="music-button">
+              <div class="info-button">
+                <b>Justin</b>
+                <p>Artist</p>
+              </div>
+              <button class="music">
+                <img src="img/play_green_button_icon_227849.webp" alt="play-button">
+              </button>
+            </div>
+          </div>  
+          <!-- 2nd artist -->
+          <div class="artist">
+            <img class="mashur" src="img/image_1.jpg" alt="pritam">
+            <div class="music-button">
+              <div class="info-button">
+                <b>Pritam</b>
+                <p>Artist</p>
+              </div>
+              <button class="music two">
+                <img src="img/play_green_button_icon_227849.webp" alt="play-button">
+              </button>
+            </div>
+          </div>
+          <!-- 3rd artist  -->
+          <div class="artist artic">
+            <img class="mashur width" src="img/artic monkeys.jpg" alt="artic">
+            <div class="music-button">
+              <div class="info-button">
+                <b>Monkeys</b>
+                <p>Artist</p>
+              </div>
+              <button class="music">
+                <img src="img/play_green_button_icon_227849.webp" alt="play-button">
+              </button>
+            </div>
+          </div>
+          <!-- 4th artist -->
+          <div class="artist">
+            <img class="mashur" src="img/image_3.jpg" alt="pritam">
+            <div class="music-button">
+              <div class="info-button">
+                <b>Pritam</b>
+                <p>Artist</p>
+              </div>
+              <button class="music">
+                <img src="img/play_green_button_icon_227849.webp" alt="play-button">
+              </button>
+            </div>
+          </div>
+          <!-- 5th artist -->
+          <div class="artist">
+            <img class="mashur width" src="img/image_4.jpg" alt="pritam">
+            <div class="music-button">
+              <div class="info-button">
+                <b>Pritam</b>
+                <p>Artist</p>
+              </div>
+              <button class="music">
+                <img src="img/play_green_button_icon_227849.webp" alt="play-button">
+              </button>
+            </div>
+          </div>
+          <!-- 6th artist -->
+          <div class="artist">
+            <img class="mashur width" src="img/image_5.jpg" alt="pritam">
+            <div class="music-button">
+              <div class="info-button">
+                <b>Pritam</b>
+                <p>Artist</p>
+              </div>
+              <button class="music">
+                <img src="img/play_green_button_icon_227849.webp" alt="play-button">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- New card (insert below existing cards) -->
+      <div class="audiosz">
+        <audio id="audioPlayer" controls></audio>
+      </div>
+    </div>
+  </div>
+    <script src="musicPlaer.js"></script>
+    
+</body>
+
+
+</html>
