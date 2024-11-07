@@ -1,0 +1,168 @@
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+
+ /* Navigation */
+ .nav {
+  padding: 10px;
+  flex-direction: column;
+  gap: 15px;
+ }
+
+ .search-bar {
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+
+ .main-search-box {
+  width: 100%;
+  max-width: 300px;
+ }
+
+ .nd-span {
+  width: 200px;
+  padding-right: 10px;
+ }
+
+ .auth {
+  padding-right: 0;
+  margin-top: 10px;
+ }
+
+ /* Main Layout */
+ .main {
+  flex-direction: column;
+  height: auto;
+  padding: 10px;
+ }
+
+ .left-panel {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+  margin-bottom: 10px;
+ }
+
+ .right-panel {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+ }
+
+ /* Artist Section */
+ .log {
+  padding: 10px;
+  gap: 15px;
+ }
+
+ .pritam {
+  margin-left: 0;
+ }
+
+ .artist {
+  min-width: 150px;
+ }
+
+ .mashur {
+  height: 100px;
+  width: 100px;
+ }
+
+ /* Music Player */
+ audio {
+  width: 90%;
+  left: 5%;
+  bottom: 5px;
+ }
+
+ #player {
+  margin-bottom: 80px;
+ }
+
+ /* Library Content */
+ .library-content {
+  padding: 10px;
+ }
+
+ .box {
+  height: auto;
+  max-height: 200px;
+ }
+
+ .box1 {
+  margin: 5px;
+  padding: 15px;
+  height: auto;
+ }
+
+ /* Music Controls */
+ .music-button {
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+ }
+
+ .info-button {
+  font-size: 14px;
+ }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+ .main-search-box {
+  max-width: 250px;
+ }
+
+ .nd-span {
+  width: 150px;
+ }
+
+ .mashur {
+  height: 80px;
+  width: 80px;
+ }
+
+ .artist {
+  min-width: 120px;
+ }
+
+ .music-button img {
+  height: 30px;
+  width: 30px;
+ }
+
+ audio {
+  height: 50px;
+ }
+
+ .box1 {
+  font-size: 14px;
+ }
+}
+
+/* Handle Device Height */
+@media screen and (max-height: 700px) {
+ .main {
+  margin-top: 10px;
+ }
+
+ .left-panel {
+  min-height: 250px;
+ }
+
+ .right-panel {
+  min-height: 300px;
+ }
+
+ .audiosz {
+ /* position: fixed; */
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ background-color: #1a1a1a;
+ padding: 10px 0;
+ z-index: 1000;
+}
+}
+
+/* Ensure Audio Player Stays Fixed */
